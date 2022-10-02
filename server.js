@@ -5,7 +5,7 @@ require("dotenv-safe").config()
 const app = express();
 const cors = require('cors');
 
-const porta = 3001;
+const porta = process.env.PORT || 3001; 
 
 const usuario = require("./routes/Usuarios");
 
